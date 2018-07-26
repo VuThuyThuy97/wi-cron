@@ -1,0 +1,23 @@
+{
+  "name": "wi-cron",
+  "version": "1.0.0",
+  "description": "cron tool for well insign",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VuThuyThuy97/wi-cron.git"
+  },
+  "author": "thuy vu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VuThuyThuy97/wi-cron/issues"
+  },
+  "homepage": "https://github.com/VuThuyThuy97/wi-cron#readme",
+  "dependencies": {
+    "async": "^2.6.1",
+    "cron": "^1.3.0"
+  }
+}
