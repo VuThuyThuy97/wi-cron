@@ -1,5 +1,5 @@
 {
-    "deleteCronComand": "* * * * * *",
+    "deleteCronCommand": "* * * * * *",
     "rootPath": "./test",
     "condition": {
         "maxDay": 10,

@@ -3,7 +3,7 @@ var deleteTool = require('./delete-files');
 let config = require('./config/default.json');
 
 function deleteExportedFiles () {
-  new CronJob(config.deleteCronComand, function() {
+  new CronJob(config.deleteCronCommand, function() {
     deleteTool.deleteFilesInSubDirectory(config.rootPath);
   }, null, true, 'America/Los_Angeles');
 }
