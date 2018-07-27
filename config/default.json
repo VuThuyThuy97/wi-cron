@@ -1,0 +1,9 @@
+{
+    "deleteCronComand": "* * * * * *",
+    "rootPath": "./test",
+    "condition": {
+        "maxDay": 10,
+        "maxSize": 5,
+        "maxMinute": 13
+    } 
+}

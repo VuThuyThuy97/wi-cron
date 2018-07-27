@@ -1,7 +1,11 @@
 var CronJob = require('cron').CronJob;
-var deleter = require('./delete-files');
+var deleteTool = require('./delete-files');
+let config = require('./config/default.json');
 
-new CronJob('* * * * * *', function() {
-  deleter.deleteExportedFiles();
-  console.log('You will see this message every second', new Date());
-}, null, true, 'America/Los_Angeles');
+function deleteExportedFiles () {
+  new CronJob(config.deleteCronComand, function() {
+    deleteTool.deleteFilesInSubDirectory(config.rootPath);
+  }, null, true, 'America/Los_Angeles');
+}
+
+deleteExportedFiles();
